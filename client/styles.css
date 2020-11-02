@@ -1,0 +1,27 @@
+body {
+    margin-top: 1em;
+    background-color: rgb(23, 166, 233);
+    color: white;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    background-color: rgb(23, 166, 233);
+    color: white;
+    border-radius: 25px;
+    border-color: white;
+}
+#heading{
+    text-align: center;
+}
+.input-group-prepend {
+    margin-left: 3em;
+    
+}
+#name {
+    max-width: 460px;
+}
+#text {
+    max-width: 400px;
+}
