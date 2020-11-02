@@ -68,7 +68,7 @@ let loadTimeline = () => {
                     <textarea class="modal-body" id="editText${chirp[0]}">${chirp[1].Text}</textarea>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="editChirp(${chirp[0]}, '${chirp[1].Name}', $('#editText${chirp[0]}').val())" $("#editModal${chirp[0]}").modal('hide') >Save changes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="editChirp(${chirp[0]}, '${chirp[1].Name}', $('#editText${chirp[0]}').val())" >Save changes</button>
                     </div>
                     </div>
                 </div>
@@ -105,7 +105,6 @@ let editChirp = (id, user, text) => {
             console.log("jkdfgnjs")
             $('#chirp-container').empty();
             location.reload();
-            loadTimeline();
         },
     });
 };
